@@ -1,0 +1,12 @@
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Domain\obj\Debug\net7.0\Post.Domain.csproj.AssemblyReference.cache
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Domain\obj\Debug\net7.0\Post.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Domain\obj\Debug\net7.0\Post.Domain.AssemblyInfoInputs.cache
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Domain\obj\Debug\net7.0\Post.Domain.AssemblyInfo.cs
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Domain\obj\Debug\net7.0\Post.Domain.csproj.CoreCompileInputs.cache
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Domain\bin\Debug\net7.0\Post.Domain.deps.json
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Domain\bin\Debug\net7.0\Post.Domain.dll
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Domain\bin\Debug\net7.0\Post.Domain.pdb
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Domain\obj\Debug\net7.0\Post.Domain.dll
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Domain\obj\Debug\net7.0\refint\Post.Domain.dll
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Domain\obj\Debug\net7.0\Post.Domain.pdb
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Domain\obj\Debug\net7.0\ref\Post.Domain.dll

@@ -1,0 +1,15 @@
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\bin\Debug\net7.0\Post.Infra.deps.json
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\bin\Debug\net7.0\Post.Infra.dll
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\bin\Debug\net7.0\Post.Infra.pdb
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\obj\Debug\net7.0\Post.Infra.csproj.AssemblyReference.cache
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\obj\Debug\net7.0\Post.Infra.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\obj\Debug\net7.0\Post.Infra.AssemblyInfoInputs.cache
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\obj\Debug\net7.0\Post.Infra.AssemblyInfo.cs
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\obj\Debug\net7.0\Post.Infra.csproj.CoreCompileInputs.cache
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\obj\Debug\net7.0\Post.Infra.dll
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\obj\Debug\net7.0\refint\Post.Infra.dll
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\obj\Debug\net7.0\Post.Infra.pdb
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\obj\Debug\net7.0\ref\Post.Infra.dll
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\bin\Debug\net7.0\Post.Domain.dll
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\bin\Debug\net7.0\Post.Domain.pdb
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\obj\Debug\net7.0\Post.Infra.csproj.CopyComplete
