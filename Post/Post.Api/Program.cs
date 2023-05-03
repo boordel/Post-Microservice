@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using Post.Domain.Entities.CategoryAggregate;
 using Post.Infra;
+using Post.Infra.Repositories;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,6 +25,9 @@ builder.Services.AddDbContext<PostDBContext>(options =>
                errorNumbersToAdd: null);
        })
 );
+
+// Add Repositories, just for test. Later we will change the algurithm
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 var app = builder.Build();
 

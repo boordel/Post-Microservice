@@ -1,4 +1,5 @@
-﻿using Post.Domain.Entities.CategoryAggregate;
+﻿using Microsoft.EntityFrameworkCore;
+using Post.Domain.Entities.CategoryAggregate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,28 +16,45 @@ public class CategoryRepository : ICategoryRepository
         _context = context;
     }
 
-    public Task Delete(int id)
+    public async Task<Category?> Get(int id)
     {
-        throw new NotImplementedException();
+        return await _context
+                        .Categories
+                        .FirstOrDefaultAsync(c => c.Id == id);
     }
 
-    public Task<Category?> Get(int id)
+    public async Task<IEnumerable<Category>> GetAll()
     {
-        throw new NotImplementedException();
+        return await _context
+                        .Categories
+                        .ToListAsync();
     }
 
-    public Task<IEnumerable<Category>> GetAll()
+    public Category Insert(Category entity)
     {
-        throw new NotImplementedException();
+        return _context
+                .Categories
+                .Add(entity)
+                .Entity;
     }
 
-    public Task Insert(Category entity)
+    public Category Update(Category entity)
     {
-        throw new NotImplementedException();
+        return _context
+                .Categories
+                .Update(entity)
+                .Entity;
     }
 
-    public Task Update(Category entity)
+    public async Task Delete(int id)
     {
-        throw new NotImplementedException();
+        var category = await _context
+                                .Categories
+                                .SingleOrDefaultAsync(c => c.Id == id);
+
+        if (category != null)
+            _context
+                .Categories
+                .Remove(category);
     }
 }
