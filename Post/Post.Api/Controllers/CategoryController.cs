@@ -21,6 +21,7 @@ public class CategoryController : ControllerBase
     }
 
     private const string CacheKey_CategoryList = "ctg_list";
+    private const int CacheValidationMinutes = 5;
 
     [HttpGet]
     [ProducesResponseType(typeof(IEnumerable<Category>), (int)HttpStatusCode.OK)]
@@ -31,7 +32,7 @@ public class CategoryController : ControllerBase
         {
             var categories = await _memoryCache.GetOrCreateAsync<IEnumerable<Category>>(CacheKey_CategoryList, async entry =>
             {
-                entry.SlidingExpiration = TimeSpan.FromMinutes(5);
+                entry.SlidingExpiration = TimeSpan.FromMinutes(CacheValidationMinutes);
                 return await _categoryRepository.GetAll();
             });
 
