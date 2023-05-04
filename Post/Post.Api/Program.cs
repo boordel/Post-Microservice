@@ -29,6 +29,9 @@ builder.Services.AddDbContext<PostDBContext>(options =>
 // Add Repositories, just for test. Later we will change the algurithm
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
+// Add memory cache. Demo porpose Only!
+builder.Services.AddMemoryCache();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
