@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Post.Api.Application.Queries.Category;
 using Post.Domain.Entities.CategoryAggregate;
+using System.Net;
 
 namespace Post.Api.Controllers;
 [Route("api/[controller]")]
@@ -16,7 +17,9 @@ public class CategoryController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<CategoryList>>> GetCategoriesAsync()
+    [ProducesResponseType(typeof(IEnumerable<Category>), (int)HttpStatusCode.OK)]
+    [ProducesResponseType((int)HttpStatusCode.NotFound)]
+    public async Task<ActionResult<IEnumerable<Category>>> GetCategoriesAsync()
     {
         try
         {
@@ -24,17 +27,7 @@ public class CategoryController : ControllerBase
             if (categories == null)
                 return NotFound();
             else
-            {
-                var list = (from c in categories
-                            select new CategoryList
-                            {
-                                Id = c.Id,
-                                Title = c.Title,
-                                PostCount = 1
-                            });
-
-                return Ok(list);
-            }
+                return Ok(categories);
         }
         catch (Exception)
         {
