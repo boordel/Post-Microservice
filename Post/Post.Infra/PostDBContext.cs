@@ -7,9 +7,9 @@ namespace Post.Infra;
 
 public class PostDBContext: DbContext
 {
-    public DbSet<Domain.Entities.PostAggregate.Post> Posts { get; set; }
-    public DbSet<PostMedia> PostMedias { get; set; }
-    public DbSet<Category> Categories { get; set; }
+    DbSet<Domain.Entities.PostAggregate.Post> Posts { get; set; }
+    DbSet<PostMedia> PostMedias { get; set; }
+    DbSet<Category> Categories { get; set; }
 
     public PostDBContext(DbContextOptions<PostDBContext> options): base(options) { }
 

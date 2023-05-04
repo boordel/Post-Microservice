@@ -9,9 +9,9 @@ namespace Post.Api.Controllers;
 [ApiController]
 public class CategoryController : ControllerBase
 {
-    private readonly CachedCategoryRepository _categoryRepository;
+    private readonly CategoryRepositoryRedisCache _categoryRepository;
 
-    public CategoryController(CachedCategoryRepository categoryRepository)
+    public CategoryController(CategoryRepositoryRedisCache categoryRepository)
     {
         _categoryRepository = categoryRepository;
     }
@@ -30,10 +30,10 @@ public class CategoryController : ControllerBase
             else
                 return Ok(categories);
         }
-        catch (Exception)
+        catch (Exception ex)
         {
             return StatusCode(StatusCodes.Status500InternalServerError,
-                "No category found");
+                "No category found: " + ex.Message);
         }
     }
 }

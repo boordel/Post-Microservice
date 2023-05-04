@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen();
 
 // Add Database Context
 builder.Services.AddDbContext<PostDBContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("PostDB"),
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlDatabase"),
        sqlOptions =>
        {
            sqlOptions.MigrationsAssembly(typeof(Program).GetTypeInfo().Assembly.GetName().Name);
@@ -27,12 +27,19 @@ builder.Services.AddDbContext<PostDBContext>(options =>
        })
 );
 
+// Add memory cache
+builder.Services.AddMemoryCache();
+
+// Add and configure redis
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = builder.Configuration.GetConnectionString("Redis");
+});
+
 // Add Repositories, just for test. Later we will change the algurithm
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-
-// Add memory cache. Demo porpose Only!
-builder.Services.AddTransient<CachedCategoryRepository>();
-builder.Services.AddMemoryCache();
+builder.Services.AddScoped<CategoryRepositoryMemoryCache>();
+builder.Services.AddScoped<CategoryRepositoryRedisCache>();
 
 var app = builder.Build();
 
