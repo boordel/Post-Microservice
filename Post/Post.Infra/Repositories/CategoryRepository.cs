@@ -16,14 +16,14 @@ public class CategoryRepository : ICategoryRepository
         _context = context;
     }
 
-    public async Task<Category?> Get(int id)
+    public async Task<Category?> GetByIdAsync(int id)
     {
         return await _context
                         .Categories
                         .FirstOrDefaultAsync(c => c.Id == id);
     }
 
-    public async Task<IEnumerable<Category>> GetAll()
+    public async Task<IEnumerable<Category>> GetAllAsync()
     {
         return await _context
                         .Categories
@@ -46,7 +46,7 @@ public class CategoryRepository : ICategoryRepository
                 .Entity;
     }
 
-    public async Task Delete(int id)
+    public async Task DeleteByIdAsync(int id)
     {
         var category = await _context
                                 .Categories

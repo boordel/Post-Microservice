@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Post.Api.Application.Repositories;
 using Post.Domain.Entities.CategoryAggregate;
 using Post.Infra;
 using Post.Infra.Repositories;
@@ -30,6 +31,7 @@ builder.Services.AddDbContext<PostDBContext>(options =>
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 // Add memory cache. Demo porpose Only!
+builder.Services.AddTransient<CachedCategoryRepository>();
 builder.Services.AddMemoryCache();
 
 var app = builder.Build();
