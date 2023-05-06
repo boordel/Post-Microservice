@@ -32,26 +32,20 @@ public class RedisCacheService : ICacheService
 
     public async Task SetAsync<T>(string cacheKey, T value, TimeSpan timeSpan = default) where T : class
     {
-        if (timeSpan == default)
-        {
-            await _distributedCache.SetStringAsync(
-                cacheKey,
-                JsonSerializer.Serialize(value));
-        }
-        else
-        {
-            await _distributedCache.SetStringAsync(
-                cacheKey,
-                JsonSerializer.Serialize(value),
-                new DistributedCacheEntryOptions()
-                    .SetAbsoluteExpiration(timeSpan)
-                );
-        }
+        var options = new DistributedCacheEntryOptions();
+        if (timeSpan != default)
+            options.SetAbsoluteExpiration(timeSpan);
+         
+        await _distributedCache.SetStringAsync(
+            cacheKey,
+            JsonSerializer.Serialize(value),
+            options
+        );
 
         CacheKeys.TryAdd(cacheKey, false);
     }
 
-    public async Task<T?> GetOrCreateAsync<T>(string cacheKey, Func<Task<T>> factory, TimeSpan timeSpan = default) where T : class
+    public async Task<T?> GetOrCreateAsync<T>(string cacheKey, Func<Task<T?>> factory, TimeSpan timeSpan = default) where T : class
     {
         T? cachedValue = await GetAsync<T>(cacheKey);
 
@@ -60,7 +54,8 @@ public class RedisCacheService : ICacheService
 
         cachedValue = await factory();
 
-        await SetAsync(cacheKey, cachedValue, timeSpan);
+        if (cachedValue != null)
+            await SetAsync(cacheKey, cachedValue, timeSpan);
 
         return cachedValue;
     }

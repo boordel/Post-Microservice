@@ -48,7 +48,7 @@ public class MemoryCacheService : ICacheService
         return Task.WhenAll(tasks);
     }
 
-    public async Task<T?> GetOrCreateAsync<T>(string cacheKey, Func<Task<T>> factory, TimeSpan timeSpan = default) where T : class =>
+    public async Task<T?> GetOrCreateAsync<T>(string cacheKey, Func<Task<T?>> factory, TimeSpan timeSpan = default) where T : class =>
         await _memoryCache.GetOrCreateAsync(
             cacheKey, 
             async entry =>
