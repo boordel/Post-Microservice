@@ -2,15 +2,14 @@ using Microsoft.EntityFrameworkCore;
 using Post.Api.Application.Repositories;
 using Post.Domain.Entities.CategoryAggregate;
 using Post.Infra;
+using Post.Infra.Caching;
 using Post.Infra.Repositories;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -38,8 +37,9 @@ builder.Services.AddStackExchangeRedisCache(options =>
 
 // Add Repositories, just for test. Later we will change the algurithm
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-builder.Services.AddScoped<CategoryRepositoryMemoryCache>();
-builder.Services.AddScoped<CategoryRepositoryRedisCache>();
+builder.Services.AddScoped<ICacheService, RedisCacheService>();
+
+builder.Services.AddScoped<CategoryRepositoryProxy>();
 
 var app = builder.Build();
 
