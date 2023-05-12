@@ -22,7 +22,7 @@ public class RedisCacheService : ICacheService
     public async Task<T?> GetAsync<T>(string cacheKey) where T : class
     {
         var cachedValue = await _distributedCache.GetStringAsync(cacheKey);
-        if (cachedValue == null)
+        if (string.IsNullOrEmpty(cachedValue))
         {
             return null;
         }
