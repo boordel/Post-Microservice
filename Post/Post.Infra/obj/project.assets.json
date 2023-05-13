@@ -1028,6 +1028,19 @@
           }
         }
       },
+      "Post.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Post.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Post.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Post.Application.dll": {}
+        }
+      },
       "Post.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -3182,6 +3195,11 @@
         "version.txt"
       ]
     },
+    "Post.Application/1.0.0": {
+      "type": "project",
+      "path": "../Post.Application/Post.Application.csproj",
+      "msbuildProject": "../Post.Application/Post.Application.csproj"
+    },
     "Post.Domain/1.0.0": {
       "type": "project",
       "path": "../Post.Domain/Post.Domain.csproj",
@@ -3193,6 +3211,7 @@
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Abstractions >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
+      "Post.Application >= 1.0.0",
       "Post.Domain >= 1.0.0"
     ]
   },
@@ -3229,6 +3248,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "D:\\Work\\Self\\.NetCore\\RedisAndSqlDemo\\Post\\Post.Application\\Post.Application.csproj": {
+              "projectPath": "D:\\Work\\Self\\.NetCore\\RedisAndSqlDemo\\Post\\Post.Application\\Post.Application.csproj"
+            },
             "D:\\Work\\Self\\.NetCore\\RedisAndSqlDemo\\Post\\Post.Domain\\Post.Domain.csproj": {
               "projectPath": "D:\\Work\\Self\\.NetCore\\RedisAndSqlDemo\\Post\\Post.Domain\\Post.Domain.csproj"
             }

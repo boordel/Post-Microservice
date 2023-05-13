@@ -13,3 +13,5 @@ D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\obj\Debug\net7.0\ref\Post.
 D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\bin\Debug\net7.0\Post.Domain.dll
 D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\bin\Debug\net7.0\Post.Domain.pdb
 D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\obj\Debug\net7.0\Post.Infra.csproj.CopyComplete
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\bin\Debug\net7.0\Post.Application.dll
+D:\Work\Self\.NetCore\RedisAndSqlDemo\Post\Post.Infra\bin\Debug\net7.0\Post.Application.pdb

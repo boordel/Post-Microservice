@@ -1336,6 +1336,19 @@
           }
         }
       },
+      "Post.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Post.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Post.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Post.Application.dll": {}
+        }
+      },
       "Post.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1353,6 +1366,7 @@
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.Abstractions": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
+          "Post.Application": "1.0.0",
           "Post.Domain": "1.0.0"
         },
         "compile": {
@@ -4239,6 +4253,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Post.Application/1.0.0": {
+      "type": "project",
+      "path": "../Post.Application/Post.Application.csproj",
+      "msbuildProject": "../Post.Application/Post.Application.csproj"
     },
     "Post.Domain/1.0.0": {
       "type": "project",

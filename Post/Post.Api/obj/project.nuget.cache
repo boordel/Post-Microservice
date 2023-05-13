@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VsGQgfwOpOzBMIwknyuJKtaflGABliYrZnUlWcH7LfhLLmx0Mvwm8bwZHWQm6rUVxnnGhIMmJp1Nor55+uPe+Q==",
+  "dgSpecHash": "rRWrZSyyEMDoLlqu7r3XMGauSBM/IY1AV38ylifFbCJzpsyKyX6fGIXUMG7qpvT4lqkFspiLaHyS9Yn+oTWAMA==",
   "success": true,
   "projectFilePath": "D:\\Work\\Self\\.NetCore\\RedisAndSqlDemo\\Post\\Post.Api\\Post.Api.csproj",
   "expectedPackageFiles": [

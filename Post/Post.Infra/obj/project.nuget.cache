@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dVYU+HHtE1fuox6t61vENhAYyRe06ZnU3c0C2TRAvREtDzCujX8VMXJ5/siwlYNv1RP0/SFdMmr7MFQum8RhFw==",
+  "dgSpecHash": "An8modyEVwqouNmgFs9hKkO6K1aZLzq8baflMyCKICRHisGzQmoW+hSFh4eFnwLCA36eRMnQe67BogxSrAvcyA==",
   "success": true,
   "projectFilePath": "D:\\Work\\Self\\.NetCore\\RedisAndSqlDemo\\Post\\Post.Infra\\Post.Infra.csproj",
   "expectedPackageFiles": [
