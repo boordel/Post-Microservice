@@ -16,6 +16,9 @@ public class Post : Entity, IAggregateRoot
             throw new ArgumentNullException("title", "post title must be specified");
         if (string.IsNullOrEmpty(headline))
             throw new ArgumentNullException("headLine", "post headline must be specified");
+        if (categoryId <= 0)
+            throw new ArgumentOutOfRangeException("categoryId", "categoryId must be valid");
+
 
         Title = title;
         Headline = headline;

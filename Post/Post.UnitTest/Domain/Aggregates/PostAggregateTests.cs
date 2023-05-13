@@ -61,11 +61,28 @@ public class PostAggregateTests
     [Fact]
     public void Create_ShouldHaveValidCategoryId()
     {
-        throw new NotImplementedException();
+        // Arrange
+        var postId = 1;
+        var title = "Fake post title";
+        var headLine = "headline";
+        var description = "description";
+        var keywords = "some keywords";
+        var categoryId = -1;
+
+        // Act
+
+        // Assert
+        Assert.Throws<ArgumentOutOfRangeException>("categoryId", () => new Post.Domain.Entities.PostAggregate.Post(
+            postId,
+            title,
+            headLine,
+            description,
+            keywords,
+            categoryId));
     }
 
     [Fact]
-    public void Create_AddMedia()
+    public void Create_ShouldAddMedia()
     {
         // Arrange
         var postId = 1;
