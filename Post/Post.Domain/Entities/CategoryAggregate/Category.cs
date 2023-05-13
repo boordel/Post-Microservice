@@ -7,13 +7,16 @@ public class Category : Entity, IAggregateRoot
 
     public Category(string title)
     {
+        if (string.IsNullOrEmpty(title))
+            throw new ArgumentNullException("title", "title must be specified");
+
         Title = title;
     }
 
     [JsonConstructorAttribute]
-    public Category(int id, string title)
+    public Category(int id, string title) :
+        this(title)
     {
         SetId(id);
-        Title = title;
     }
 }

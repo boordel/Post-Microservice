@@ -37,7 +37,7 @@ public class PostAggregateTests
     [Theory]
     [InlineData("title", "", "headLine")]
     [InlineData("headLine", "title", "")]
-    public void Create_ShouldHaveTitleAndHeadline(string paramName, string title, string headLine)
+    public void Create_ShouldHaveValidArguments(string paramName, string title, string headLine)
     {
         // Arrange 
         var postId = 1;
@@ -116,7 +116,7 @@ public class PostAggregateTests
     [InlineData("title", "", PostTypes.Image, "file")]
     [InlineData("type", "media title", PostTypes.None, "file")]
     [InlineData("mediaUrl", "media title", PostTypes.Video, "")]
-    public void Create_MediaShouldHaveValidArgument(string paramName, string mediaTitle, PostTypes mediaType, string mediaFile)
+    public void Create_ShouldMediaHaveValidArguments(string paramName, string mediaTitle, PostTypes mediaType, string mediaFile)
     {
         // Arrange
         var postId = 1;
