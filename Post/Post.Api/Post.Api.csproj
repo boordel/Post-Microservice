@@ -20,12 +20,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Post.Application\Post.Application.csproj" />
     <ProjectReference Include="..\Post.Domain\Post.Domain.csproj" />
     <ProjectReference Include="..\Post.Infra\Post.Infra.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Queries\" />
     <Folder Include="Infrastructure\Migrations\" />
   </ItemGroup>
 

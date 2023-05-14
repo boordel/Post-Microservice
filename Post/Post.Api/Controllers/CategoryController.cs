@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Post.Api.Application.Repositories;
-using Post.Domain.Entities.CategoryAggregate;
 using System.Net;
 
 namespace Post.Api.Controllers;

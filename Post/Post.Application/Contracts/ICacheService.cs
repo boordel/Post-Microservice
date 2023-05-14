@@ -1,4 +1,4 @@
-﻿namespace Post.Infra.Caching;
+﻿namespace Post.Application.Contracts;
 
 public interface ICacheService
 {

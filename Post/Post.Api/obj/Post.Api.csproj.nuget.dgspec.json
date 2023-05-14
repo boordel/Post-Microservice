@@ -33,6 +33,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "D:\\Work\\Self\\.NetCore\\RedisAndSqlDemo\\Post\\Post.Application\\Post.Application.csproj": {
+                "projectPath": "D:\\Work\\Self\\.NetCore\\RedisAndSqlDemo\\Post\\Post.Application\\Post.Application.csproj"
+              },
               "D:\\Work\\Self\\.NetCore\\RedisAndSqlDemo\\Post\\Post.Domain\\Post.Domain.csproj": {
                 "projectPath": "D:\\Work\\Self\\.NetCore\\RedisAndSqlDemo\\Post\\Post.Domain\\Post.Domain.csproj"
               },

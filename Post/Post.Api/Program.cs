@@ -1,11 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using Post.Api.Application.Repositories;
-using Post.Domain.Entities.CategoryAggregate;
-using Post.Infra;
-using Post.Infra.Caching;
-using Post.Infra.Repositories;
-using System.Reflection;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();

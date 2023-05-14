@@ -1,4 +1,4 @@
-﻿namespace Post.Api.Application.Settings;
+﻿namespace Post.Application.Settings;
 
 public static class CacheSettings
 {

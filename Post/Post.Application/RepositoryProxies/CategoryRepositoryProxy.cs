@@ -1,9 +1,6 @@
-﻿using Post.Api.Application.Settings;
-using Post.Domain.Entities.CategoryAggregate;
-using Post.Infra.Caching;
-using Post.Infra.Repositories;
+﻿using Post.Domain.Entities.CategoryAggregate;
 
-namespace Post.Api.Application.Repositories;
+namespace Post.Application.Repositories;
 
 public class CategoryRepositoryProxy
 {

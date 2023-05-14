@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Caching.Distributed;
+using Post.Application.Contracts;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
