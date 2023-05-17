@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Moq;
-using Post.Api.Controllers;
-using Post.Application.RepositoryProxies.Contracts;
 using Post.Domain.Entities.CategoryAggregate;
 using Microsoft.AspNetCore.Mvc;
 
