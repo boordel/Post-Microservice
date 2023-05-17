@@ -1,5 +1,6 @@
 ﻿global using Microsoft.EntityFrameworkCore;
 global using Post.Domain.Entities.CategoryAggregate;
+global using Post.Application.RepositoryProxies.Contracts;
 global using Post.Infra;
 global using Post.Infra.Repositories;
 global using System.Reflection;

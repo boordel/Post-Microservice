@@ -31,7 +31,7 @@ builder.Services.AddStackExchangeRedisCache(options =>
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ICacheService, RedisCacheService>();
 
-builder.Services.AddScoped<CategoryRepositoryProxy>();
+builder.Services.AddScoped<ICategoryRepositoryProxy, CategoryRepositoryProxy>();
 
 var app = builder.Build();
 

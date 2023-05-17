@@ -1,10 +1,4 @@
 ﻿using Post.Domain.Entities.CategoryAggregate;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xunit;
 
 namespace Post.UnitTest.Domain.Aggregates;
 public class CategoryAggregateTests

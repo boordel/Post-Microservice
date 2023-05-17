@@ -2,7 +2,7 @@
 
 namespace Post.Application.Repositories;
 
-public class CategoryRepositoryProxy
+public class CategoryRepositoryProxy: ICategoryRepositoryProxy
 {
     private readonly ICategoryRepository _categoryRepository;
     private readonly ICacheService _cacheService;

@@ -7,9 +7,9 @@ namespace Post.Api.Controllers;
 [ApiController]
 public class CategoryController : ControllerBase
 {
-    private readonly CategoryRepositoryProxy _categoryRepository;
+    private readonly ICategoryRepositoryProxy _categoryRepository;
 
-    public CategoryController(CategoryRepositoryProxy categoryRepository)
+    public CategoryController(ICategoryRepositoryProxy categoryRepository)
     {
         _categoryRepository = categoryRepository;
     }
