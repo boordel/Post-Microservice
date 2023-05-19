@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "An8modyEVwqouNmgFs9hKkO6K1aZLzq8baflMyCKICRHisGzQmoW+hSFh4eFnwLCA36eRMnQe67BogxSrAvcyA==",
+  "dgSpecHash": "+R3VOb8mGdQYrgZ5ZJc32iONbSSb8u3+htAAon0dD7AxVlmdMOl+6jnYF/jI04R05ZoI8IkJeC1FJ0m4+Awk3g==",
   "success": true,
   "projectFilePath": "D:\\Work\\Self\\.NetCore\\RedisAndSqlDemo\\Post\\Post.Infra\\Post.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\boord\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\boord\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\boord\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\boord\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\boord\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\boord\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\boord\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

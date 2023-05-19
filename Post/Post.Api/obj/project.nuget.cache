@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "7+rQLmR8i0NIomu7+xtZloCU7GJNRpGsP6NTPhr6FKaLZNboLSqlOyzWHy+z53ywTlHwVJRiv//bvcTLtcCfMg==",
+  "dgSpecHash": "hsLoh5l/hOHqtWGW7EBelq4Pv5oZ/WpWQTAyWhp/Ki+wEKwsvW39G5CY4svB8OvDriNy4M5Gfygo/sXBypBl1w==",
   "success": true,
   "projectFilePath": "D:\\Work\\Self\\.NetCore\\RedisAndSqlDemo\\Post\\Post.Api\\Post.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\boord\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\boord\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\boord\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\boord\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\boord\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\boord\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "C:\\Users\\boord\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\boord\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

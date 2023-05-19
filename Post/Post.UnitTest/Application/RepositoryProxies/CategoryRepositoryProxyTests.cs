@@ -3,11 +3,6 @@ using Post.Application.Contracts;
 using Post.Application.Repositories;
 using Post.Application.Settings;
 using Post.Domain.Entities.CategoryAggregate;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Post.UnitTest.Application.RepositoryProxies;
 public class CategoryRepositoryProxyTests
