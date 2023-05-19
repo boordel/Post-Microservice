@@ -19,9 +19,8 @@ public class MemoryCacheService : ICacheService
 
     private ConcurrentDictionary<string, bool> CacheKeys = new();
 
-    public async Task<T?> GetAsync<T>(string cacheKey) where T : class =>
-        await Task.FromResult(_memoryCache.Get<T>(cacheKey));
-
+    public Task<T?> GetAsync<T>(string cacheKey) where T : class =>
+        Task.FromResult(_memoryCache.Get<T>(cacheKey));
 
     public Task SetAsync<T>(string cacheKey, T value, TimeSpan timeSpan = default) where T : class
     {
